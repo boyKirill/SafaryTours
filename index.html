@@ -5,51 +5,48 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./style.css">
-	<title>task 0</title>
+	<link rel="stylesheet" href="./css/adaptive.css">
+	<link rel="stylesheet" href="./css/fonts.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>SafariTour</title>
 </head>
 
 <body>
-	<table class="table" cols="10">
-		<caption>Диагностика деревень</caption>
-		<tr>
-			<td></td>
-			<td>Эпшики</td>
-			<td>Тувалькино</td>
-			<td>Азим-Сирма</td>
-			<td>Ямбахтино</td>
-		</tr>
-		<tr>
-			<td>Население(ч)</td>
-			<td>120</td>
-			<td>140</td>
-			<td>300</td>
-			<td>420</td>
-		</tr>
-		<tr>
-			<td>Клуб</td>
-			<td>есть</td>
-			<td>нет</td>
-			<td>есть</td>
-			<td>есть</td>
-		</tr>
-		<tr>
-			<td>Магазин</td>
-			<td>есть</td>
-			<td>нет</td>
-			<td>есть(2шт)</td>
-			<td>есть(2шт)</td>
-		</tr>
-		<tr>
-			<td>Футбольное поле</td>
-			<td>есть</td>
-			<td>нет</td>
-			<td>есть</td>
-			<td>есть</td>
-		</tr>
-	</table>
-	<script src="./script.js"></script>
-
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="" class="header__logo-link">
+					<span class="header__logo-text1">Safari Tour</span>
+					<span class="header__logo-text2">International Tour packages</span>
+				</a>
+				<div class="header__menu menu">
+					<div class="menu__icon">
+						<span></span>
+					</div>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li>
+								<a data-goto=".page__section1" href="#" class="menu__link">Home</a>
+							</li>
+							<li>
+								<a data-goto=".page__section2" href="#" class="menu__link">Packages</a>
+							</li>
+							<li>
+								<a data-goto=".page__section3" href="#" class="menu__link">Flights</a>
+							</li>
+							<li>
+								<a data-goto=".page__section2" href="#" class="menu__link">Trains</a>
+							</li>
+							<li>
+								<a data-goto=".page__section3" href="#" class="menu__link">Reach us</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+	</div>
+	<script src="script.js"></script>
 </body>
 
 </html>
