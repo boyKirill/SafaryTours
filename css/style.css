@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: "AG Aalen Bold - Roman";
-  src: url(/fonts/ofont.ru_AGAalenBold.ttf);
+  src: url(/fonts/agaalenbold-roman.ttf);
 }
 
 @font-face {
@@ -147,7 +147,21 @@ body._lock {
 }
 
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
   min-height: 100%;
+}
+
+.page {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .header {
@@ -236,4 +250,221 @@ body._lock {
 
 .menu__link:hover {
   text-decoration: underline;
+}
+
+.footer {
+  background: url(/img/footer/footerbg2.webp) #127ea6;
+}
+
+.footer__container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0px 0 22px 0;
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__column {
+  padding: 0 30px;
+}
+
+.social__media-icons a {
+  font-size: 50px;
+  color: #3bb3de;
+}
+
+.title {
+  padding: 22px 0 0 0;
+  text-shadow: 1px 1px 0 rgba(15, 111, 146, 0.75);
+  color: #ffffff;
+  font-family: "ColabReg";
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.letter-form__email {
+  width: 193px;
+  height: 31px;
+  -webkit-box-shadow: inset 1px 3px 8px rgba(13, 66, 85, 0.75);
+          box-shadow: inset 1px 3px 8px rgba(13, 66, 85, 0.75);
+  background-color: #0f6686;
+  padding-left: 12px;
+  border: 2px solid;
+  -o-border-image: linear-gradient(to top, #93d3e9, #143f4f) 1;
+     border-image: -webkit-gradient(linear, left bottom, left top, from(#93d3e9), to(#143f4f)) 1;
+     border-image: linear-gradient(to top, #93d3e9, #143f4f) 1;
+  border-radius: 10px;
+  margin: 17px 12px 33px 0;
+}
+
+.letter-form__btn {
+  padding: 8px 14px;
+  cursor: pointer;
+  font-family: "ColabMed";
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 7px;
+  text-align: center;
+  color: #1380a7;
+  background-color: #d6e6ef;
+}
+
+.contact__title {
+  margin: 9px 0 23px 0;
+}
+
+.contact__list li {
+  margin: 0 0 13px 0;
+}
+
+.contact__list li:last-child {
+  margin-bottom: 0;
+}
+
+.contact__text {
+  color: #ffffff;
+  font-family: "Colaborate - Thin";
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.contact__number {
+  color: #ffffff;
+  font-family: "Colaborate - Thin";
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.contact__number a {
+  color: #ffffff;
+}
+
+.contact__email {
+  color: #ffffff;
+  font-family: "Colaborate - Thin";
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact__email div {
+  padding: 0 1px;
+}
+
+.contact__email a {
+  color: #ffffff;
+}
+
+.contact__email p {
+  padding: 0 1px 13px 1px;
+}
+
+.contact__fax {
+  color: #ffffff;
+  font-family: "Colaborate - Thin";
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact__fax div {
+  padding: 0 13px 0 0;
+}
+
+.contact-form__group li {
+  padding-bottom: 13px;
+}
+
+.contact-form__name {
+  width: 193px;
+  height: 31px;
+  -webkit-box-shadow: inset 1px 3px 8px rgba(13, 66, 85, 0.75);
+          box-shadow: inset 1px 3px 8px rgba(13, 66, 85, 0.75);
+  background-color: #0f6686;
+  padding-left: 12px;
+  border: 2px solid;
+  -o-border-image: linear-gradient(to top, #93d3e9, #143f4f) 1;
+     border-image: -webkit-gradient(linear, left bottom, left top, from(#93d3e9), to(#143f4f)) 1;
+     border-image: linear-gradient(to top, #93d3e9, #143f4f) 1;
+  border-radius: 10px;
+}
+
+.contact-form__email {
+  width: 193px;
+  height: 31px;
+  -webkit-box-shadow: inset 1px 3px 8px rgba(13, 66, 85, 0.75);
+          box-shadow: inset 1px 3px 8px rgba(13, 66, 85, 0.75);
+  background-color: #0f6686;
+  padding-left: 12px;
+  border: 2px solid;
+  -o-border-image: linear-gradient(to top, #93d3e9, #143f4f) 1;
+     border-image: -webkit-gradient(linear, left bottom, left top, from(#93d3e9), to(#143f4f)) 1;
+     border-image: linear-gradient(to top, #93d3e9, #143f4f) 1;
+  border-radius: 10px;
+}
+
+.contact-form__phone {
+  width: 193px;
+  height: 31px;
+  -webkit-box-shadow: inset 1px 3px 8px rgba(13, 66, 85, 0.75);
+          box-shadow: inset 1px 3px 8px rgba(13, 66, 85, 0.75);
+  background-color: #0f6686;
+  padding-left: 12px;
+  border: 2px solid;
+  -o-border-image: linear-gradient(to top, #93d3e9, #143f4f) 1;
+     border-image: -webkit-gradient(linear, left bottom, left top, from(#93d3e9), to(#143f4f)) 1;
+     border-image: linear-gradient(to top, #93d3e9, #143f4f) 1;
+  border-radius: 10px;
+}
+
+.contact-form__text {
+  width: 253px;
+  height: 57px;
+  -webkit-box-shadow: inset 1px 3px 8px rgba(13, 66, 85, 0.75);
+          box-shadow: inset 1px 3px 8px rgba(13, 66, 85, 0.75);
+  background-color: #0f6686;
+  padding-left: 12px;
+  border: 2px solid;
+  -o-border-image: linear-gradient(to top, #93d3e9, #143f4f) 1;
+     border-image: -webkit-gradient(linear, left bottom, left top, from(#93d3e9), to(#143f4f)) 1;
+     border-image: linear-gradient(to top, #93d3e9, #143f4f) 1;
+  border-radius: 10px;
+}
+
+.contact-form__btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contact-form__btn {
+  padding: 8px 23px;
+  cursor: pointer;
+  font-family: "ColabMed";
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 7px;
+  text-align: center;
+  color: #1380a7;
+  background-color: #d6e6ef;
 }

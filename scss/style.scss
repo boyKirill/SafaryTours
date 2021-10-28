@@ -6,7 +6,14 @@ body._lock {
 }
 
 .wrapper {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
 	min-height: 100%;
+}
+
+.page {
+	flex: 1 1 auto;
 }
 
 .header {
@@ -62,7 +69,7 @@ body._lock {
 .menu {
 	&__icon {
 		display: block;
-		padding-left: 10px;;
+		padding-left: 10px;
 	}
 
 	&__body {
@@ -85,5 +92,241 @@ body._lock {
 		&:hover {
 			text-decoration: underline;
 		}
+	}
+}
+
+.footer {
+	background: url(/img/footer/footerbg2.webp) #127ea6;
+	&__container {
+		max-width: 950px;
+		margin: 0 auto;
+		padding: 0px 0 22px 0;
+	}
+
+	&__row {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	&__column {
+		padding: 0 30px;
+	}
+}
+.column {
+	&__social {
+	}
+
+	&__contact {
+	}
+
+	&__contact-form {
+	}
+}
+.social {
+	&__letter {
+	}
+
+	&__letter-title {
+	}
+
+	&__letter-form {
+	}
+
+	&__media {
+	}
+
+	&__media-title {
+	}
+
+	&__media-icons {
+		a {
+			font-size: 50px;
+			color: #3bb3de;
+		}
+	}
+}
+.title {
+	padding: 22px 0 0 0;
+	text-shadow: 1px 1px 0 rgba(15, 111, 146, 0.75);
+	color: #ffffff;
+	font-family: "ColabReg";
+	font-size: 25px;
+	font-weight: 400;
+}
+
+.letter-form {
+	&__group {
+	}
+	&__email {
+		width: 193px;
+		height: 31px;
+
+		box-shadow: inset 1px 3px 8px rgba(13, 66, 85, 0.75);
+		background-color: #0f6686;
+		padding-left: 12px;
+		border: 2px solid;
+		border-image: linear-gradient(to top, #93d3e9, #143f4f) 1;
+		border-radius: 10px;
+		margin: 17px 12px 33px 0;
+	}
+	&__btn {
+		padding: 8px 14px;
+		cursor: pointer;
+		font-family: "ColabMed";
+		font-size: 16px;
+		font-weight: 400;
+		border-radius: 7px;
+		text-align: center;
+		color: #1380a7;
+		background-color: #d6e6ef;
+	}
+}
+.fab {
+}
+.fa-twitter-square {
+}
+.fa-facebook-square {
+}
+.fa-instagram-square {
+}
+.contact {
+	&__title {
+		margin: 9px 0 23px 0;
+	}
+
+	&__list {
+		li {
+			margin: 0 0 13px 0;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&__text {
+		color: #ffffff;
+		font-family: "Colaborate - Thin";
+		font-size: 14px;
+		font-weight: 400;
+		text-align: left;
+	}
+
+	&__number {
+		color: #ffffff;
+		font-family: "Colaborate - Thin";
+		font-size: 14px;
+		font-weight: 400;
+		text-align: left;
+		a {
+			color: #ffffff;
+		}
+	}
+
+	&__email {
+		color: #ffffff;
+		font-family: "Colaborate - Thin";
+		font-size: 14px;
+		font-weight: 400;
+		text-align: left;
+		display: flex;
+		div {
+			padding: 0 1px;
+		}
+		a {
+			color: #ffffff;
+		}
+		p {
+			padding: 0 1px 13px 1px;
+		}
+	}
+
+	&__fax {
+		color: #ffffff;
+		font-family: "Colaborate - Thin";
+		font-size: 14px;
+		font-weight: 400;
+		text-align: left;
+		display: flex;
+		div {
+			padding: 0 13px 0 0;
+		}
+	}
+}
+.contact-form {
+	&__title {
+	}
+
+	&__form {
+	}
+
+	&__group {
+		li {
+			padding-bottom: 13px;
+		}
+	}
+
+	&__name {
+		width: 193px;
+		height: 31px;
+
+		box-shadow: inset 1px 3px 8px rgba(13, 66, 85, 0.75);
+		background-color: #0f6686;
+		padding-left: 12px;
+		border: 2px solid;
+		border-image: linear-gradient(to top, #93d3e9, #143f4f) 1;
+		border-radius: 10px;
+	}
+
+	&__email {
+		width: 193px;
+		height: 31px;
+
+		box-shadow: inset 1px 3px 8px rgba(13, 66, 85, 0.75);
+		background-color: #0f6686;
+		padding-left: 12px;
+		border: 2px solid;
+		border-image: linear-gradient(to top, #93d3e9, #143f4f) 1;
+		border-radius: 10px;
+	}
+
+	&__phone {
+		width: 193px;
+		height: 31px;
+
+		box-shadow: inset 1px 3px 8px rgba(13, 66, 85, 0.75);
+		background-color: #0f6686;
+		padding-left: 12px;
+		border: 2px solid;
+		border-image: linear-gradient(to top, #93d3e9, #143f4f) 1;
+		border-radius: 10px;
+	}
+
+	&__text {
+		width: 253px;
+		height: 57px;
+
+		box-shadow: inset 1px 3px 8px rgba(13, 66, 85, 0.75);
+		background-color: #0f6686;
+		padding-left: 12px;
+		border: 2px solid;
+		border-image: linear-gradient(to top, #93d3e9, #143f4f) 1;
+		border-radius: 10px;
+	}
+
+	&__btn-box {
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__btn {
+		padding: 8px 23px;
+		cursor: pointer;
+		font-family: "ColabMed";
+		font-size: 16px;
+		font-weight: 400;
+		border-radius: 7px;
+		text-align: center;
+		color: #1380a7;
+		background-color: #d6e6ef;
 	}
 }
