@@ -96,11 +96,20 @@ body._lock {
 }
 
 .footer {
-	background: url(/img/footer/footerbg2.webp) #127ea6;
+	background: radial-gradient(at top, #1c93bf, #127ea5) padding-box, linear-gradient(to right, #127ea5) border-box;
+	border-top: 3px solid transparent;
+	background-color: #127ea5;
+	background-size: cover;
+
+	input::placeholder,
+	textarea::placeholder {
+		color: #5190a7;
+	}
+
 	&__container {
 		max-width: 950px;
 		margin: 0 auto;
-		padding: 0px 0 22px 0;
+		padding: 0 0 12px 0;
 	}
 
 	&__row {
@@ -112,12 +121,39 @@ body._lock {
 	&__column {
 		padding: 0 30px;
 	}
+
+	&__autor {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		p {
+			color: #ffffff;
+			font-family: "Colaborate - Thin";
+			font-size: 14px;
+			font-weight: 400;
+			text-align: left;
+			margin: 0 10px;
+		}
+	}
+	&__autor-icon {
+		position: relative;
+		&::before {
+			content: "©";
+			position: absolute;
+			font-size: 22px;
+			top: -4px;
+			margin-left: -20px;
+		}
+	}
 }
 .column {
 	&__social {
 	}
 
 	&__contact {
+		a:hover {
+			text-decoration: underline;
+		}
 	}
 
 	&__contact-form {
@@ -140,9 +176,15 @@ body._lock {
 	}
 
 	&__media-icons {
+		margin: 15px 0 0 0;
 		a {
-			font-size: 50px;
-			color: #3bb3de;
+			margin: 0 3px;
+			&:first-child {
+				margin-left: 0;
+			}
+			&:hover {
+				opacity: 0.5;
+			}
 		}
 	}
 }
@@ -157,18 +199,18 @@ body._lock {
 
 .letter-form {
 	&__group {
+		margin-top: 17px;
 	}
 	&__email {
 		width: 193px;
 		height: 31px;
-
-		box-shadow: inset 1px 3px 8px rgba(13, 66, 85, 0.75);
-		background-color: #0f6686;
-		padding-left: 12px;
-		border: 2px solid;
-		border-image: linear-gradient(to top, #93d3e9, #143f4f) 1;
-		border-radius: 10px;
-		margin: 17px 12px 33px 0;
+		background: linear-gradient(#0f6686, #0f6686) padding-box, linear-gradient(to bottom, #154050, #96d6ed) border-box;
+		color: #ffffff;
+		font-family: "Colaborate - Thin";
+		padding: 10px;
+		border: 2px solid transparent;
+		border-radius: 5px;
+		margin: 0 10px 0 0;
 	}
 	&__btn {
 		padding: 8px 14px;
@@ -180,6 +222,9 @@ body._lock {
 		text-align: center;
 		color: #1380a7;
 		background-color: #d6e6ef;
+		&:hover {
+			background-color: #ccc;
+		}
 	}
 }
 .fab {
@@ -258,9 +303,13 @@ body._lock {
 	}
 
 	&__form {
+		margin-top: 17px;
 	}
 
 	&__group {
+		textarea {
+			resize: none;
+		}
 		li {
 			padding-bottom: 13px;
 		}
@@ -269,49 +318,45 @@ body._lock {
 	&__name {
 		width: 193px;
 		height: 31px;
-
-		box-shadow: inset 1px 3px 8px rgba(13, 66, 85, 0.75);
-		background-color: #0f6686;
-		padding-left: 12px;
-		border: 2px solid;
-		border-image: linear-gradient(to top, #93d3e9, #143f4f) 1;
-		border-radius: 10px;
+		background: linear-gradient(#0f6686, #0f6686) padding-box, linear-gradient(to bottom, #154050, #96d6ed) border-box;
+		color: #ffffff;
+		font-family: "Colaborate - Thin";
+		padding: 10px;
+		border: 2px solid transparent;
+		border-radius: 5px;
 	}
 
 	&__email {
 		width: 193px;
 		height: 31px;
-
-		box-shadow: inset 1px 3px 8px rgba(13, 66, 85, 0.75);
-		background-color: #0f6686;
-		padding-left: 12px;
-		border: 2px solid;
-		border-image: linear-gradient(to top, #93d3e9, #143f4f) 1;
-		border-radius: 10px;
+		background: linear-gradient(#0f6686, #0f6686) padding-box, linear-gradient(to bottom, #154050, #96d6ed) border-box;
+		color: #ffffff;
+		font-family: "Colaborate - Thin";
+		padding: 10px;
+		border: 2px solid transparent;
+		border-radius: 5px;
 	}
 
 	&__phone {
 		width: 193px;
 		height: 31px;
-
-		box-shadow: inset 1px 3px 8px rgba(13, 66, 85, 0.75);
-		background-color: #0f6686;
-		padding-left: 12px;
-		border: 2px solid;
-		border-image: linear-gradient(to top, #93d3e9, #143f4f) 1;
-		border-radius: 10px;
+		background: linear-gradient(#0f6686, #0f6686) padding-box, linear-gradient(to bottom, #154050, #96d6ed) border-box;
+		color: #ffffff;
+		font-family: "Colaborate - Thin";
+		padding: 10px;
+		border: 2px solid transparent;
+		border-radius: 5px;
 	}
 
 	&__text {
 		width: 253px;
 		height: 57px;
-
-		box-shadow: inset 1px 3px 8px rgba(13, 66, 85, 0.75);
-		background-color: #0f6686;
-		padding-left: 12px;
-		border: 2px solid;
-		border-image: linear-gradient(to top, #93d3e9, #143f4f) 1;
-		border-radius: 10px;
+		background: linear-gradient(#0f6686, #0f6686) padding-box, linear-gradient(to bottom, #154050, #96d6ed) border-box;
+		color: #ffffff;
+		font-family: "Colaborate - Thin";
+		padding: 10px;
+		border: 2px solid transparent;
+		border-radius: 5px;
 	}
 
 	&__btn-box {
@@ -328,5 +373,8 @@ body._lock {
 		text-align: center;
 		color: #1380a7;
 		background-color: #d6e6ef;
+		&:hover {
+			background-color: #ccc;
+		}
 	}
 }
