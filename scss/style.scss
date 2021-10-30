@@ -76,6 +76,7 @@ body._lock {
 		transform: rotate(2deg);
 		margin: 15px 0px 0 0;
 		padding: 0 65px 0 0;
+		border-radius: 10px;
 	}
 
 	&__list {
@@ -126,12 +127,13 @@ body._lock {
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
+		padding: 0 20px;
 		p {
+			text-align: center;
 			color: #ffffff;
 			font-family: "Colaborate - Thin";
 			font-size: 14px;
 			font-weight: 400;
-			text-align: left;
 			margin: 0 10px;
 		}
 	}
