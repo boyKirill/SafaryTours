@@ -96,6 +96,149 @@ body._lock {
 	}
 }
 
+.double-block {
+	background-color: #ccc;
+
+	&__slider {
+	}
+
+	&__booking {
+	}
+}
+.image-slider {
+	&__wrapper {
+	}
+
+	&__slide {
+	}
+
+	&__image {
+	}
+}
+
+.booking {
+	border: 7px solid #7ebee0;
+	background-color: #299fca;
+	margin: 30px;
+	max-width: 309px;
+	border-radius: 20px;
+	&__title {
+		margin: 26px 0 33px -20px;
+		color: #ffffff;
+		font-family: "AG Letterica Bold Bold";
+		font-size: 21px;
+		font-weight: 400;
+		max-width: 237px;
+		background-color: #ded90e;
+		border-radius: 5px 0 0 5px;
+		padding: 12px 0 9px 18px;
+		box-shadow: -5px 1px 5px rgba(18, 126, 165, 0.75);
+		position: relative;
+		
+		&::before {
+			content: "";
+			margin: -11px 0 0  -20px;
+			position: absolute;
+			left:  100%;
+			width: 0;
+			height: 0;
+			border-top: 20px solid transparent;
+			border-right: 20px solid #299fca;
+			border-bottom: 20px solid transparent;
+			
+			
+		}
+	}
+
+	&__row {
+		display: flex;
+		margin: 0 20px 0 15px;
+		
+	}
+
+	&__items {
+		li {
+			text-align: right;
+			color: #ffffff;
+			font-family: "AG Foreigner Roman Medium";
+			font-size: 17px;
+			white-space: nowrap;
+			font-weight: 400;
+			margin-bottom: 27px;
+			text-shadow: 2px 0 0 #2090b9, -2px 0 0 #2090b9, 0 2px 0 #2090b9, 0 -2px 0 #2090b9, 1px 1px #2090b9, -1px -1px 0 #2090b9, 1px -1px 0 #2090b9, -1px 1px 0 #2090b9;
+			&:first-child {
+				margin-top: 6px;
+			}
+		}
+	}
+
+	&__item-image {
+		margin-top: 50px;
+	}
+
+	&__forms {
+		padding: 0 0 0 8px;
+	}
+
+	&__forms-group {
+		input,
+		textarea,
+		select {
+			width: 100%;
+			height: 31px;
+			border: 3px solid #a7d1e6;
+			border-radius: 10px;
+			padding-left: 7px;
+			color: #299fca;
+			font-family: "AG Foreigner Roman Medium";
+		}
+
+		select{
+			appearance: none;
+			background: url('/img/slider/select-triangle.webp') no-repeat right center #fff;
+		}
+
+		textarea {
+			width: 171px;
+			height: 57px;
+			resize: none;
+			padding-top: 5px;
+		}
+		li {
+			margin-bottom: 14px;
+			
+		}
+	}
+
+	&__form-name {
+	}
+
+	&__form-email {
+	}
+
+	&__form-package {
+	}
+
+	&__form-message {
+	}
+
+	&__form-btn-box {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__form-btn {
+		color: #64affc;
+		font-family: "AG Letterica Bold Bold";
+		font-size: 15px;
+		font-weight: 400;
+		cursor: pointer;
+		background-image: linear-gradient(to top, #e5db10 0%, #fff203 100%);
+		border-radius: 5px;
+		padding: 10px 25px;
+	}
+}
+
 .footer {
 	background: radial-gradient(at top, #1c93bf, #127ea5) padding-box, linear-gradient(to right, #127ea5) border-box;
 	border-top: 3px solid transparent;

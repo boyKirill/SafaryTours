@@ -6,7 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://kit.fontawesome.com/069a9a1876.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="./css/adaptive.css">
+	<link rel="stylesheet" href="./css/slider.css">
 	<link rel="stylesheet" href="./css/fonts.css">
 	<link rel="stylesheet" href="./css/style.css">
 	<title>SafariTour</title>
@@ -47,6 +49,77 @@
 			</div>
 		</header>
 		<main class="page">
+			<div class="double-block">
+				<div class="double-block__slider">
+					<div class="image-slider swiper-container">
+						<!-- Слайдер + Lazy Loading -->
+						<div class="image-slider__wrapper swiper-wrapper">
+							<!-- Слайды -->
+							<div class="image-slider__slide swiper-slide">
+								<div class="image-slider__image">
+									<img data-src="./img/slider/7-layers.png" src="./img/slider/7-layers.webp"
+										class="swiper-lazy" alt="">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+							</div>
+							<div class="image-slider__slide swiper-slide">
+								<div class="image-slider__image">
+									<img data-src="./img/slider/7-layers.png" src="./img/slider/7-layers.webp"
+										class="swiper-lazy" alt="">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+							</div>
+							<div class="image-slider__slide swiper-slide">
+								<div class="image-slider__image">
+									<img data-src="./img/slider/7-layers.png" src="./img/slider/7-layers.webp"
+										class="swiper-lazy" alt="">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+						<!--
+						<div class="swiper-pagination"></div>
+						
+						<div class="swiper-scrollbar"></div>
+					</div>-->
+					</div>
+					<div class="double-block__booking booking">
+						<div class="booking__title">Online Booking</div>
+						<div class="booking__row">
+							<div class="booking__items">
+								<ul>
+									<li>Name :</li>
+									<li>email :</li>
+									<li>Package :</li>
+									<li>message :</li>
+								</ul>
+								<div class="booking__item-image"><img src="./img/slider/ladder.webp" alt=""></div>
+							</div>
+							<div class="booking__forms">
+								<form class="booking__forms" action="mailto:k.vladmirov@yandex.ru" enctype="text/plain">
+									<ul class="booking__forms-group">
+										<li><input type="text" class="booking__form-name"></li>
+										<li><input type="email" class="booking__form-email"></li>
+										<li><select class="booking__form-package" name="" id="">
+												<option value="" selected>Africa Packages</option>
+												<option value="">Africa</option>
+												<option value="">Packages</option>
+											</select></li>
+										<li><textarea class="booking__form-message" name="" id="" cols="30" rows="10"></textarea>
+										</li>
+									</ul>
+									
+										
+										<div class="booking__form-btn-box"><input type="submit" value="Submit" class="booking__form-btn"></div>
+									
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -123,7 +196,8 @@
 					</div>
 				</div>
 				<div class="footer__autor">
-					<p class="footer__autor-icon">Copyright 2013 cssauthor.com, All Rights Reserved</p> <p> Designed and Developed By cssauthor.com</p>
+					<p class="footer__autor-icon">Copyright 2013 cssauthor.com, All Rights Reserved</p>
+					<p> Designed and Developed By cssauthor.com</p>
 				</div>
 			</div>
 		</footer>
@@ -131,7 +205,9 @@
 
 	<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-	<script src="script.js"></script>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<script src="./slider.js"></script>
+	<script src="./script.js"></script>
 </body>
 
 </html>
