@@ -169,14 +169,14 @@ body._lock {
   position: fixed;
   top: 0;
   left: 50%;
-  width: 60%;
+  width: 63%;
   height: 84px;
   z-index: 10;
   background-color: #4cb2e7;
   margin: -23px auto 0 auto;
   border-radius: 7px;
-  -webkit-transform: translateX(-50%) rotate(-2deg);
-          transform: translateX(-50%) rotate(-2deg);
+  -webkit-transform: translateX(-53%) rotate(-2deg);
+          transform: translateX(-53%) rotate(-2deg);
 }
 
 .header__container {
@@ -234,13 +234,14 @@ body._lock {
 .menu__body {
   -webkit-transform: rotate(2deg);
           transform: rotate(2deg);
-  margin: 15px 0px 0 0;
-  padding: 0 65px 0 0;
+  margin: 10px 0px 0 0;
+  padding: 0 105px 0 0;
   border-radius: 10px;
 }
 
 .menu__list li {
   margin: 20px 30px 0 25px;
+  white-space: nowrap;
 }
 
 .menu__link {
@@ -255,7 +256,35 @@ body._lock {
 }
 
 .double-block {
-  background-color: #ccc;
+  background: url(/img/slider/cloud_2.png) center 350px/cover no-repeat, url(/img/slider/bg_shades1.webp) no-repeat 40% -20% #d6e6ef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 84px 0 0 0px;
+}
+
+.double-block__slider {
+  position: relative;
+  padding: 90px 0 0 0;
+}
+
+.image-slider {
+  max-width: 645px;
+}
+
+.image-slider__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .booking {
@@ -275,15 +304,15 @@ body._lock {
   max-width: 237px;
   background-color: #ded90e;
   border-radius: 5px 0 0 5px;
-  padding: 12px 0 9px 18px;
-  -webkit-box-shadow: -5px 1px 5px rgba(18, 126, 165, 0.75);
-          box-shadow: -5px 1px 5px rgba(18, 126, 165, 0.75);
+  padding: 12px 0 9px 22px;
+  -webkit-box-shadow: 1px 1px 5px rgba(18, 126, 165, 0.75);
+          box-shadow: 1px 1px 5px rgba(18, 126, 165, 0.75);
   position: relative;
 }
 
 .booking__title::before {
   content: "";
-  margin: -11px 0 0  -20px;
+  margin: -11px 0 0 -20px;
   position: absolute;
   left: 100%;
   width: 0;
@@ -308,7 +337,7 @@ body._lock {
   white-space: nowrap;
   font-weight: 400;
   margin-bottom: 27px;
-  text-shadow: 2px 0 0 #2090b9, -2px 0 0 #2090b9, 0 2px 0 #2090b9, 0 -2px 0 #2090b9, 1px 1px #2090b9, -1px -1px 0 #2090b9, 1px -1px 0 #2090b9, -1px 1px 0 #2090b9;
+  text-shadow: 2px 0 0 #2090b9, -2px 0 0 #2090b9, 0 2px 0 #2090b9, 0 -2px 0 #2090b9, 1px 1px #2090b9, -1px -1px 0 #2090b9, 1px -1px 0 #2090b9, -1px 1px 0 #2090b9;
 }
 
 .booking__items li:first-child {
@@ -340,6 +369,8 @@ body._lock {
      -moz-appearance: none;
           appearance: none;
   background: url("/img/slider/select-triangle.webp") no-repeat right center #fff;
+  background-size: contain;
+  cursor: pointer;
 }
 
 .booking__forms-group textarea {

@@ -29,19 +29,19 @@
 					<nav class="menu__body">
 						<ul class="menu__list">
 							<li>
-								<a data-goto=".page__section1" href="#" class="menu__link">Home</a>
+								<a href="#" class="menu__link">Home</a>
 							</li>
 							<li>
-								<a data-goto=".page__section2" href="#" class="menu__link">Packages</a>
+								<a href="#" class="menu__link">Packages</a>
 							</li>
 							<li>
-								<a data-goto=".page__section3" href="#" class="menu__link">Flights</a>
+								<a href="#" class="menu__link">Flights</a>
 							</li>
 							<li>
-								<a data-goto=".page__section2" href="#" class="menu__link">Trains</a>
+								<a href="#" class="menu__link">Trains</a>
 							</li>
 							<li>
-								<a data-goto=".page__section3" href="#" class="menu__link">Reach us</a>
+								<a href="#" class="menu__link">Reach us</a>
 							</li>
 						</ul>
 					</nav>
@@ -49,7 +49,7 @@
 			</div>
 		</header>
 		<main class="page">
-			<div class="double-block">
+			<section class="double-block">
 				<div class="double-block__slider">
 					<div class="image-slider swiper-container">
 						<!-- Слайдер + Lazy Loading -->
@@ -77,49 +77,45 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="swiper-button-prev"></div>
 						<div class="swiper-button-next"></div>
-						<!--
-						<div class="swiper-pagination"></div>
-						
-						<div class="swiper-scrollbar"></div>
-					</div>-->
 					</div>
-					<div class="double-block__booking booking">
-						<div class="booking__title">Online Booking</div>
-						<div class="booking__row">
-							<div class="booking__items">
-								<ul>
-									<li>Name :</li>
-									<li>email :</li>
-									<li>Package :</li>
-									<li>message :</li>
+				</div>
+				<div class="double-block__booking booking">
+					<div class="booking__title">Online Booking</div>
+					<div class="booking__row">
+						<div class="booking__items">
+							<ul>
+								<li>Name :</li>
+								<li>email :</li>
+								<li>Package :</li>
+								<li>message :</li>
+							</ul>
+							<div class="booking__item-image"><img src="./img/slider/ladder.webp" alt=""></div>
+						</div>
+						<div class="booking__forms">
+							<form class="booking__forms" action="mailto:k.vladmirov@yandex.ru" enctype="text/plain">
+								<ul class="booking__forms-group">
+									<li><input type="text" class="booking__form-name"></li>
+									<li><input type="email" class="booking__form-email"></li>
+									<li><select class="booking__form-package" name="" id="">
+											<option value="" selected>Africa Packages</option>
+											<option value="">Africa</option>
+											<option value="">Packages</option>
+										</select></li>
+									<li><textarea class="booking__form-message" name="" id="" cols="30" rows="10"></textarea>
+									</li>
 								</ul>
-								<div class="booking__item-image"><img src="./img/slider/ladder.webp" alt=""></div>
-							</div>
-							<div class="booking__forms">
-								<form class="booking__forms" action="mailto:k.vladmirov@yandex.ru" enctype="text/plain">
-									<ul class="booking__forms-group">
-										<li><input type="text" class="booking__form-name"></li>
-										<li><input type="email" class="booking__form-email"></li>
-										<li><select class="booking__form-package" name="" id="">
-												<option value="" selected>Africa Packages</option>
-												<option value="">Africa</option>
-												<option value="">Packages</option>
-											</select></li>
-										<li><textarea class="booking__form-message" name="" id="" cols="30" rows="10"></textarea>
-										</li>
-									</ul>
-									
-										
-										<div class="booking__form-btn-box"><input type="submit" value="Submit" class="booking__form-btn"></div>
-									
-								</form>
-							</div>
+
+
+								<div class="booking__form-btn-box"><input type="submit" value="Submit"
+										class="booking__form-btn"></div>
+
+							</form>
 						</div>
 					</div>
 				</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">

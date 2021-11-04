@@ -35,7 +35,7 @@ const swiper = new Swiper('.image-slider', {
 
 	// Включение/отключение
 	// Перетаскивание на ПК
-	simulateTouch: true,
+	simulateTouch: false,
 	// Чувствительность свайпа
 	touchRatio: 1,
 	// Угол срабатывания свайпа/перетаскивания
@@ -44,7 +44,7 @@ const swiper = new Swiper('.image-slider', {
 	grabCursor: true,
 
 	// Переключение при клике на слайд
-	slideToClickedSlide: true,
+	slideToClickedSlide: false,
 
 	// Управление клавиатурой
 	keyboard: {
@@ -58,14 +58,7 @@ const swiper = new Swiper('.image-slider', {
 		pageUpDown: true,
 	},
 
-	// Управление колесом мыши
-	mousewheel: {
-		// Чувствительность колеса мыши
-		sensitivity: 1,
-		// Класс объекта на котором будет срабатывать прокрутка мышью
-		// Нужно отключать когда много слайдеров
-		//eventsTarget: ".image-slider"
-	},
+	
 
 	// Автовысота
 	autoHeight: true,
@@ -96,7 +89,7 @@ const swiper = new Swiper('.image-slider', {
 	//выключаем scroll, 
 	//не работает если slidesPerColumn > 1
 	//если slidesPerView:'auto' , то loopedSlides настраваем вручную
-	loop: false,
+	loop: true,
 
 	// Количество дублируемых слайдов
 	loopedSlides: 0,
