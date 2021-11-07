@@ -75,77 +75,77 @@ h1, h2, h3, h4, h5, h6 {
 /*-------------------------*/
 @font-face {
   font-family: "A 1010 Helvetika - Normal";
-  src: url(/fonts/a1010helvetika_normal.ttf);
+  src: url(../fonts/a1010helvetika_normal.ttf);
 }
 
 @font-face {
   font-family: "Arial MT";
-  src: url(/fonts/16063.ttf);
+  src: url(../fonts/16063.ttf);
 }
 
 @font-face {
   font-family: "AG Foreigner Roman Medium";
-  src: url(/fonts/ag_foreigner_romanmedium.ttf);
+  src: url(../fonts/ag_foreigner_romanmedium.ttf);
 }
 
 @font-face {
   font-family: "AG Letterica Bold Bold";
-  src: url(/fonts/ag_letterica_bold.ttf);
+  src: url(../fonts/ag_letterica_bold.ttf);
 }
 
 @font-face {
   font-family: "ColabMed";
-  src: url(/fonts/ColabMed.otf);
+  src: url(../fonts/ColabMed.otf);
 }
 
 @font-face {
   font-family: "Colaborate - Thin";
-  src: url(/fonts/colaborate-thin_[allfont.ru].ttf);
+  src: url(../fonts/colaborate-thin_[allfont.ru].ttf);
 }
 
 @font-face {
   font-family: "ColabReg";
-  src: url(/fonts/ColabReg.otf);
+  src: url(../fonts/ColabReg.otf);
 }
 
 @font-face {
   font-family: "Copse";
-  src: url(/fonts/copse_[allfont.ru].ttf);
+  src: url(../fonts/copse_[allfont.ru].ttf);
 }
 
 @font-face {
   font-family: "Crash CTT";
-  src: url(/fonts/crashctt_[allfont.ru].ttf);
+  src: url(../fonts/crashctt_[allfont.ru].ttf);
 }
 
 @font-face {
   font-family: "a _ Bighaus Titul Brk - Extra Bold";
-  src: url(/fonts/ofont.ru_a_BighausTitulBrk.ttf);
+  src: url(../fonts/ofont.ru_a_BighausTitulBrk.ttf);
 }
 
 @font-face {
   font-family: "a _ Cooper Black Nr";
-  src: url(/fonts/ofont.ru_a_CooperBlackNr.ttf);
+  src: url(../fonts/ofont.ru_a_CooperBlackNr.ttf);
 }
 
 @font-face {
   font-family: "AG Souvenir";
-  src: url(/fonts/ofont.ru_AG_Souvenir.ttf);
+  src: url(../fonts/ofont.ru_AG_Souvenir.ttf);
 }
 
 @font-face {
   font-family: "AG Aalen Bold - Roman";
-  src: url(/fonts/agaalenbold-roman.ttf);
+  src: url(../fonts/agaalenbold-roman.ttf);
 }
 
 @font-face {
   font-family: "AG Benguiat Cyr Book";
-  src: url(/fonts/ofont.ru_AGBenguiatCyr.ttf);
+  src: url(../fonts/ofont.ru_AGBenguiatCyr.ttf);
 }
 
 @font-face {
   font-family: "A Bodoni Nova Nr Italic";
-  src: url(/fonts/ABodoninovanrItalic.ttf);
+  src: url(../fonts/ABodoninovanrItalic.ttf);
 }
 
 body._lock {
@@ -261,8 +261,8 @@ body._lock {
 }
 
 .double-block {
-  background: url(/img/slider/cloud_2.png) center 350px/cover no-repeat, url(/img/slider/bg_shades1.webp) no-repeat 40% -20%, -webkit-gradient(linear, left bottom, left top, color-stop(20%, #f5f9fb), color-stop(50%, #d7e7f0), color-stop(10%, #d6e6ef));
-  background: url(/img/slider/cloud_2.png) center 350px/cover no-repeat, url(/img/slider/bg_shades1.webp) no-repeat 40% -20%, linear-gradient(to top, #f5f9fb 20%, #d7e7f0 50%, #d6e6ef 10%);
+  background: url(../img/slider/cloud_2.png) center 350px/cover no-repeat, url(../img/slider/bg_shades1.webp) no-repeat 40% -20%, -webkit-gradient(linear, left bottom, left top, color-stop(20%, #f5f9fb), color-stop(50%, #d7e7f0), color-stop(10%, #d6e6ef));
+  background: url(../img/slider/cloud_2.png) center 350px/cover no-repeat, url(../img/slider/bg_shades1.webp) no-repeat 40% -20%, linear-gradient(to top, #f5f9fb 20%, #d7e7f0 50%, #d6e6ef 10%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,7 +376,7 @@ body._lock {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: url("/img/slider/select-triangle.webp") no-repeat right center #fff;
+  background: url("../img/slider/select-triangle.webp") no-repeat right center #fff;
   background-size: contain;
   cursor: pointer;
 }
@@ -425,7 +425,7 @@ body._lock {
 .offer {
   position: relative;
   margin: -200px 0 0 0;
-  background: url(/img/offer/cloud_1.webp) center 0px/cover no-repeat;
+  background: url(../img/offer/cloud_1.webp) center 0px/cover no-repeat;
 }
 
 .offer__container {
@@ -649,7 +649,7 @@ body._lock {
   position: absolute;
   top: 1.5px;
   left: -20px;
-  background: url(/img/offer/arrow.webp) no-repeat;
+  background: url(../img/offer/arrow.webp) no-repeat;
   display: block;
 }
 

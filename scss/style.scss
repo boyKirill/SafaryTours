@@ -98,8 +98,8 @@ body._lock {
 }
 
 .double-block {
-	background: url(/img/slider/cloud_2.png) center 350px / cover no-repeat,
-		url(/img/slider/bg_shades1.webp) no-repeat 40% -20%,
+	background: url(../img/slider/cloud_2.png) center 350px / cover no-repeat,
+		url(../img/slider/bg_shades1.webp) no-repeat 40% -20%,
 		linear-gradient(to top, #f5f9fb 20%, #d7e7f0 50%, #d6e6ef 10%);
 
 	display: flex;
@@ -209,7 +209,7 @@ body._lock {
 
 		select {
 			appearance: none;
-			background: url("/img/slider/select-triangle.webp") no-repeat right center #fff;
+			background: url("../img/slider/select-triangle.webp") no-repeat right center #fff;
 			background-size: contain;
 			cursor: pointer;
 		}
@@ -266,7 +266,7 @@ body._lock {
 .offer {
 	position: relative;
 	margin: -200px 0 0 0;
-	background: url(/img/offer/cloud_1.webp) center 0px / cover no-repeat;
+	background: url(../img/offer/cloud_1.webp) center 0px / cover no-repeat;
 
 	&__container {
 		padding-top: 200px;
@@ -465,7 +465,7 @@ body._lock {
 			position: absolute;
 			top: 1.5px;
 			left: -20px;
-			background: url(/img/offer/arrow.webp) no-repeat;
+			background: url(../img/offer/arrow.webp) no-repeat;
 			display: block;
 		}
 	}
