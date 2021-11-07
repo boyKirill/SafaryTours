@@ -22,7 +22,7 @@ body._lock {
 	left: 50%;
 	width: 63%;
 	height: 84px;
-	z-index: 10;
+	z-index: 1000;
 	background-color: #4cb2e7;
 	margin: -23px auto 0 auto;
 	border-radius: 7px;
@@ -99,8 +99,11 @@ body._lock {
 
 .double-block {
 	background: url(/img/slider/cloud_2.png) center 350px / cover no-repeat,
-		url(/img/slider/bg_shades1.webp) no-repeat 40% -20% #d6e6ef;
+		url(/img/slider/bg_shades1.webp) no-repeat 40% -20%,
+		linear-gradient(to top, #f5f9fb 20%, #d7e7f0 50%, #d6e6ef 10%);
+
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: flex-start;
 	padding: 84px 0 0 0px;
@@ -240,6 +243,8 @@ body._lock {
 	}
 
 	&__form-btn {
+		position: relative;
+		z-index: 10;
 		color: #64affc;
 		font-family: "AG Letterica Bold Bold";
 		font-size: 15px;
@@ -248,6 +253,240 @@ body._lock {
 		background-image: linear-gradient(to top, #e5db10 0%, #fff203 100%);
 		border-radius: 5px;
 		padding: 10px 25px;
+		&:hover {
+			background-image: none;
+			background-color: #19ff19;
+			color: #fff;
+			text-shadow: 2px 0 0 #2090b9, -2px 0 0 #2090b9, 0 2px 0 #2090b9, 0 -2px 0 #2090b9, 1px 1px #2090b9,
+				-1px -1px 0 #2090b9, 1px -1px 0 #2090b9, -1px 1px 0 #2090b9;
+		}
+	}
+}
+
+.offer {
+	position: relative;
+	margin: -200px 0 0 0;
+	background: url(/img/offer/cloud_1.webp) center 0px / cover no-repeat;
+
+	&__container {
+		padding-top: 200px;
+		max-width: 1000px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__bg {
+		width: 100%;
+	}
+	&__special {
+		position: relative;
+		bottom: 0;
+	}
+
+	&__special-title {
+		color: #ffffff;
+		font-family: "A Bodoni Nova Nr Italic";
+		font-size: 29px;
+		font-weight: 400;
+	}
+
+	&__special-row {
+		padding: 40px 0 25px 0;
+	}
+
+	&__special-column {
+		display: flex;
+		max-width: 332px;
+		padding: 26px 0 18px 0;
+		border-bottom: 2px dotted #fff;
+		&:first-child {
+			padding-top: 0;
+		}
+		&:last-child {
+			padding-bottom: 0;
+			border-bottom: none;
+		}
+	}
+
+	&__summer {
+		width: 57%;
+	}
+
+	&__summer-container {
+	}
+
+	&__summer-nav {
+		max-width: 533px;
+	}
+
+	&__summer-body {
+		display: none;
+	}
+}
+.special {
+	&__image {
+	}
+
+	&__information {
+		padding: 0 0 0 15px;
+	}
+
+	&__title {
+		color: #ffffff;
+		font-family: "Colaborate";
+		font-size: 17px;
+		font-weight: 500;
+		text-align: left;
+	}
+
+	&__text {
+		color: #ffffff;
+		font-family: "Colaborate - Thin";
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 20px;
+		text-align: left;
+	}
+
+	&__row {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding: 17px 6px 0px 0;
+	}
+	&__sum {
+		color: #ffffff;
+		font-family: "AG Benguiat Cyr Book";
+		font-size: 27px;
+		font-weight: 400;
+		margin: 0 20px 0 0;
+	}
+
+	&__btn {
+		cursor: pointer;
+		padding: 8px 12px 8px 12px;
+		border-radius: 5px;
+		color: #64affc;
+		font-family: "AG Letterica Bold Bold";
+		font-size: 15px;
+		font-weight: 400;
+		background-image: linear-gradient(to top, #e5db10 0%, #fff203 100%);
+		&:hover {
+			background-image: none;
+			background-color: #19ff19;
+			color: #fff;
+		}
+	}
+}
+
+.read-more {
+	display: none;
+}
+.read-more._active {
+	display: block;
+}
+
+.summer-nav {
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin: 0 0 17px 0;
+		border-bottom: 1px solid #81ffff;
+	}
+
+	&__tabs {
+		padding: 0 0 8px 0;
+	}
+
+	&__tabs-link {
+		color: #81ffff;
+		font-family: "A 1010 Helvetika - Normal";
+		font-size: 15px;
+		font-weight: 400;
+		text-transform: uppercase;
+		text-align: center;
+		background-color: #299fca;
+		border-radius: 5px 5px 0 0;
+	}
+
+	&__logo {
+		margin-right: -2px;
+	}
+}
+
+.summer-nav__tabs-link._active {
+	background-color: #81ffff;
+	color: #31a2be;
+}
+.offer__summer-body._active {
+	display: block;
+}
+.tabs-link-1 {
+	padding: 11px 37px 7px 27px;
+}
+.tabs-link-2 {
+	padding: 11px 29px 7px 25px;
+	margin-left: 4px;
+}
+
+.summer-body {
+	&__row {
+	}
+
+	&__column {
+	}
+
+	&__suggestion {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__suggestion-inf {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: 75%;
+	}
+
+	&__suggestion-inf-title {
+		color: #ffffff;
+		font-family: "Colaborate - Thin";
+		margin: 0 0 0 25px;
+		padding: 0 0 10px 0;
+		font-size: 16px;
+		font-weight: 400;
+		position: relative;
+		&::before {
+			content: "";
+			width: 11px;
+			height: 12px;
+			position: absolute;
+			top: 1.5px;
+			left: -20px;
+			background: url(/img/offer/arrow.webp) no-repeat;
+			display: block;
+		}
+	}
+
+	&__suggestion-inf-period {
+		color: #ffffff;
+		font-family: "Colaborate - Thin";
+		font-size: 16px;
+		font-weight: 400;
+		text-align: left;
+	}
+
+	&__suggestion-details {
+		color: #ffffff;
+		font-family: "Colaborate - Thin";
+		font-size: 16px;
+		font-weight: 400;
+		text-align: left;
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
 

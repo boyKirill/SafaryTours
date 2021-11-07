@@ -89,7 +89,55 @@ if (menuLinks.length > 0) {
 }
 
 
-// форма телефонного номера
+// Форма телефонного номера
 $(".contact-form__phone").mask("+7(999)999-99-99");
 
+// Показ скрытой части текста
+let readMore = document.querySelector('.read-more');
+let specialBtns = document.querySelectorAll('.special__btn');
 
+for (let index = 0; index < specialBtns.length; index++) {
+	const specialBtn = specialBtns[index];
+	specialBtn.addEventListener('click', function (e) {
+
+		if (specialBtn.innerHTML == "Read more") {
+			specialBtn.innerHTML = "Read less"
+			let parent = specialBtn.parentElement;
+			let previousElement = parent.previousElementSibling;
+			let previousElementChildSpan = previousElement.querySelector('.read-more');
+
+			previousElementChildSpan.classList.add('_active');
+		} else {
+			specialBtn.innerHTML = "Read more"
+			let parent = specialBtn.parentElement;
+			let previousElement = parent.previousElementSibling;
+			let previousElementChildSpan = previousElement.querySelector('.read-more');
+
+			previousElementChildSpan.classList.remove('_active');
+		}
+	});
+}
+
+// Табы в Offers
+var tabNavs = document.querySelectorAll(".summer-nav__tabs-link");
+var tabPanes = document.querySelectorAll(".offer__summer-body");
+
+for (var i = 0; i < tabNavs.length; i++) {
+
+	tabNavs[i].addEventListener("click", function (e) {
+		e.preventDefault();
+		var activeTabAttr = e.target.getAttribute("data-tab");
+
+		for (var j = 0; j < tabNavs.length; j++) {
+			var contentAttr = tabPanes[j].getAttribute("data-tab-content");
+
+			if (activeTabAttr === contentAttr) {
+				tabNavs[j].classList.add("_active");
+				tabPanes[j].classList.add("_active");
+			} else {
+				tabNavs[j].classList.remove("_active");
+				tabPanes[j].classList.remove("_active");
+			}
+		};
+	});
+}

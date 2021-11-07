@@ -14,8 +14,11 @@
 		transform: rotate(-5deg);
 	}
 	.header._active {
-		transform: translateX(-50%) rotate(0deg);
-		transition-delay: 0s;
+		transform: translateX(-53%) rotate(0deg);
+		transition-duration: 0.3s;
+	}
+	.header {
+		transition-duration: 0.3s;
 	}
 	.header__container {
 		align-items: center;

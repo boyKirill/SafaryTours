@@ -143,6 +143,11 @@ h1, h2, h3, h4, h5, h6 {
   src: url(/fonts/ofont.ru_AGBenguiatCyr.ttf);
 }
 
+@font-face {
+  font-family: "A Bodoni Nova Nr Italic";
+  src: url(/fonts/ABodoninovanrItalic.ttf);
+}
+
 body._lock {
   overflow: hidden;
 }
@@ -171,7 +176,7 @@ body._lock {
   left: 50%;
   width: 63%;
   height: 84px;
-  z-index: 10;
+  z-index: 1000;
   background-color: #4cb2e7;
   margin: -23px auto 0 auto;
   border-radius: 7px;
@@ -256,10 +261,13 @@ body._lock {
 }
 
 .double-block {
-  background: url(/img/slider/cloud_2.png) center 350px/cover no-repeat, url(/img/slider/bg_shades1.webp) no-repeat 40% -20% #d6e6ef;
+  background: url(/img/slider/cloud_2.png) center 350px/cover no-repeat, url(/img/slider/bg_shades1.webp) no-repeat 40% -20%, -webkit-gradient(linear, left bottom, left top, color-stop(20%, #f5f9fb), color-stop(50%, #d7e7f0), color-stop(10%, #d6e6ef));
+  background: url(/img/slider/cloud_2.png) center 350px/cover no-repeat, url(/img/slider/bg_shades1.webp) no-repeat 40% -20%, linear-gradient(to top, #f5f9fb 20%, #d7e7f0 50%, #d6e6ef 10%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -394,6 +402,8 @@ body._lock {
 }
 
 .booking__form-btn {
+  position: relative;
+  z-index: 10;
   color: #64affc;
   font-family: "AG Letterica Bold Bold";
   font-size: 15px;
@@ -403,6 +413,264 @@ body._lock {
   background-image: linear-gradient(to top, #e5db10 0%, #fff203 100%);
   border-radius: 5px;
   padding: 10px 25px;
+}
+
+.booking__form-btn:hover {
+  background-image: none;
+  background-color: #19ff19;
+  color: #fff;
+  text-shadow: 2px 0 0 #2090b9, -2px 0 0 #2090b9, 0 2px 0 #2090b9, 0 -2px 0 #2090b9, 1px 1px #2090b9, -1px -1px 0 #2090b9, 1px -1px 0 #2090b9, -1px 1px 0 #2090b9;
+}
+
+.offer {
+  position: relative;
+  margin: -200px 0 0 0;
+  background: url(/img/offer/cloud_1.webp) center 0px/cover no-repeat;
+}
+
+.offer__container {
+  padding-top: 200px;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.offer__bg {
+  width: 100%;
+}
+
+.offer__special {
+  position: relative;
+  bottom: 0;
+}
+
+.offer__special-title {
+  color: #ffffff;
+  font-family: "A Bodoni Nova Nr Italic";
+  font-size: 29px;
+  font-weight: 400;
+}
+
+.offer__special-row {
+  padding: 40px 0 25px 0;
+}
+
+.offer__special-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 332px;
+  padding: 26px 0 18px 0;
+  border-bottom: 2px dotted #fff;
+}
+
+.offer__special-column:first-child {
+  padding-top: 0;
+}
+
+.offer__special-column:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.offer__summer {
+  width: 57%;
+}
+
+.offer__summer-nav {
+  max-width: 533px;
+}
+
+.offer__summer-body {
+  display: none;
+}
+
+.special__information {
+  padding: 0 0 0 15px;
+}
+
+.special__title {
+  color: #ffffff;
+  font-family: "Colaborate";
+  font-size: 17px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.special__text {
+  color: #ffffff;
+  font-family: "Colaborate - Thin";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+
+.special__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 17px 6px 0px 0;
+}
+
+.special__sum {
+  color: #ffffff;
+  font-family: "AG Benguiat Cyr Book";
+  font-size: 27px;
+  font-weight: 400;
+  margin: 0 20px 0 0;
+}
+
+.special__btn {
+  cursor: pointer;
+  padding: 8px 12px 8px 12px;
+  border-radius: 5px;
+  color: #64affc;
+  font-family: "AG Letterica Bold Bold";
+  font-size: 15px;
+  font-weight: 400;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#e5db10), to(#fff203));
+  background-image: linear-gradient(to top, #e5db10 0%, #fff203 100%);
+}
+
+.special__btn:hover {
+  background-image: none;
+  background-color: #19ff19;
+  color: #fff;
+}
+
+.read-more {
+  display: none;
+}
+
+.read-more._active {
+  display: block;
+}
+
+.summer-nav__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 0 0 17px 0;
+  border-bottom: 1px solid #81ffff;
+}
+
+.summer-nav__tabs {
+  padding: 0 0 8px 0;
+}
+
+.summer-nav__tabs-link {
+  color: #81ffff;
+  font-family: "A 1010 Helvetika - Normal";
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #299fca;
+  border-radius: 5px 5px 0 0;
+}
+
+.summer-nav__logo {
+  margin-right: -2px;
+}
+
+.summer-nav__tabs-link._active {
+  background-color: #81ffff;
+  color: #31a2be;
+}
+
+.offer__summer-body._active {
+  display: block;
+}
+
+.tabs-link-1 {
+  padding: 11px 37px 7px 27px;
+}
+
+.tabs-link-2 {
+  padding: 11px 29px 7px 25px;
+  margin-left: 4px;
+}
+
+.summer-body__suggestion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.summer-body__suggestion-inf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 75%;
+}
+
+.summer-body__suggestion-inf-title {
+  color: #ffffff;
+  font-family: "Colaborate - Thin";
+  margin: 0 0 0 25px;
+  padding: 0 0 10px 0;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+
+.summer-body__suggestion-inf-title::before {
+  content: "";
+  width: 11px;
+  height: 12px;
+  position: absolute;
+  top: 1.5px;
+  left: -20px;
+  background: url(/img/offer/arrow.webp) no-repeat;
+  display: block;
+}
+
+.summer-body__suggestion-inf-period {
+  color: #ffffff;
+  font-family: "Colaborate - Thin";
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.summer-body__suggestion-details {
+  color: #ffffff;
+  font-family: "Colaborate - Thin";
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.summer-body__suggestion-details:hover {
+  text-decoration: underline;
 }
 
 .footer {

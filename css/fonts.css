@@ -67,3 +67,8 @@
   font-family: "AG Benguiat Cyr Book";
   src: url(/fonts/ofont.ru_AGBenguiatCyr.ttf);
 }
+
+@font-face {
+  font-family: "A Bodoni Nova Nr Italic";
+  src: url(/fonts/ABodoninovanrItalic.ttf);
+}
