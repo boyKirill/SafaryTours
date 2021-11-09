@@ -38,3 +38,34 @@
   opacity: 1;
   visibility: visible;
 }
+
+@media screen and (max-width: 378px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: transparent;
+    z-index: 100;
+  }
+  .swiper-button-prev {
+    background-size: cover;
+  }
+  .swiper-button-next {
+    left: 55px;
+    top: 94%;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .swiper-button-prev {
+    top: 89%;
+    background-size: cover;
+  }
+  .swiper-button-next {
+    left: 55px;
+    top: 100%;
+    background-size: cover;
+  }
+}

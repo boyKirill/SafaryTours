@@ -83,15 +83,16 @@
             transform: rotate(45deg) translate(0px, 50%);
   }
   .menu__body {
+    overflow: auto;
     position: fixed;
     top: 0;
     left: -150%;
     width: 100%;
+    height: 80vh;
     background-color: #4cb2e7;
-    padding: 100px 30px 30px 30px;
+    padding: 40px 30px 30px 30px;
     -webkit-transition: left 0.3s ease 0s;
     transition: left 0.3s ease 0s;
-    overflow: auto;
   }
   .menu__body._active {
     -webkit-transform: rotate(0deg);
@@ -112,7 +113,7 @@
     margin-bottom: 0;
   }
   .menu__link {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
@@ -138,7 +139,62 @@
   }
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 850px) {
+  .offer {
+    margin-top: -250px;
+  }
+  .offer__container {
+    margin: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .offer__special-title {
+    padding-top: 50px;
+    text-align: center;
+  }
+  .offer__special-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .offer__special-column {
+    border-bottom: none;
+    padding: 0;
+  }
+  .offer__special-column:first-child {
+    padding-top: 26px;
+    border-bottom: none;
+    padding: 0 10px 0 0;
+  }
+  .offer__special-column:last-child {
+    padding: 0;
+    border-bottom: none;
+  }
+  .offer__summer {
+    width: 72%;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding: 0 0 20px 0;
+  }
+  .special {
+    padding: 0 20px;
+  }
+  .summer-nav__body {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+  .summer-body__suggestion-inf-period {
+    padding: 0 15px 0 0;
+  }
   .footer {
     padding-top: 80px;
   }
@@ -159,6 +215,22 @@
   .header .menu__list {
     padding: 90px 0 20px 0;
   }
+  .offer {
+    margin-top: -300px;
+  }
+  .offer__special {
+    padding-top: 80px;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .double-block__slider {
+    padding: 50px 0 0 0;
+    max-width: 450px;
+  }
+  .summer-nav__logo img {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -172,12 +244,75 @@
   .header .header__logo-text2 {
     font-size: 10px;
   }
+  .menu__list > li {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 0 20px 0;
+  }
+  .menu__link {
+    font-size: 20px;
+  }
+  .offer {
+    margin-top: -340px;
+  }
+  .offer__special {
+    padding-top: 80px;
+  }
+  .offer__special-title {
+    font-size: 25px;
+  }
+  .offer__special-row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .offer__special-column:first-child {
+    padding: 0;
+  }
+  .offer__summer {
+    width: 93%;
+  }
+  .special__title {
+    font-size: 15px;
+  }
+  .special__text {
+    font-size: 13px;
+  }
+  .special__sum {
+    font-size: 20px;
+  }
+  .special__btn {
+    font-size: 13px;
+  }
+  .summer-nav__tabs {
+    padding: 0 0 6px 0;
+  }
+  .summer-nav__tabs-link {
+    color: #81ffff;
+    font-family: "A 1010 Helvetika - Normal";
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #299fca;
+    border-radius: 5px 5px 0 0;
+  }
+  .tabs-link-1 {
+    padding: 8px 27px 5px 17px;
+  }
+  .tabs-link-2 {
+    padding: 8px 19px 5px 15px;
+    margin: 0 4px;
+  }
   .footer {
     padding-top: 60px;
   }
 }
 
 @media screen and (max-width: 435px) {
+  .double-block__slider {
+    padding: 30px 0 0 0;
+    max-width: 400px;
+  }
   .header .header__logo-link {
     max-width: 100px;
     padding: 65px 5px 15px 5px;
@@ -187,5 +322,130 @@
   }
   .header .header__logo-text2 {
     font-size: 7px;
+  }
+  .summer-body__suggestion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .summer-body__suggestion-inf {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 75%;
+  }
+  .summer-body__suggestion-inf-title {
+    color: #ffffff;
+    font-family: "Colaborate - Thin";
+    margin: 0 0 0 25px;
+    padding: 0 10px 10px 0;
+    font-size: 13px;
+    font-weight: 400;
+    position: relative;
+  }
+  .summer-body__suggestion-inf-title::before {
+    content: "";
+    width: 11px;
+    height: 12px;
+    position: absolute;
+    top: 1.5px;
+    left: -20px;
+    background: url(../img/offer/arrow.webp) no-repeat;
+    display: block;
+  }
+  .summer-body__suggestion-inf-period {
+    white-space: nowrap;
+    color: #ffffff;
+    font-family: "Colaborate - Thin";
+    font-size: 13px;
+    font-weight: 400;
+    text-align: left;
+  }
+  .summer-body__suggestion-details {
+    color: #ffffff;
+    font-family: "Colaborate - Thin";
+    font-size: 13px;
+    font-weight: 400;
+    text-align: left;
+  }
+  .summer-body__suggestion-details:hover {
+    text-decoration: underline;
+  }
+  .summer-nav__tabs {
+    padding: 0 0 4px 0;
+  }
+  .summer-nav__tabs-link {
+    color: #81ffff;
+    font-family: "A 1010 Helvetika - Normal";
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #299fca;
+    border-radius: 5px 5px 0 0;
+  }
+  .tabs-link-1 {
+    padding: 5px 12px 3px 12px;
+  }
+  .tabs-link-2 {
+    padding: 5px 7px 3px 7px;
+    margin: 0 4px 0 2px;
+  }
+  .footer {
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 378px) {
+  .double-block__slider {
+    padding: 30px 0 0 0;
+    max-width: 350px;
+  }
+  .offer {
+    margin-top: -360px;
+  }
+  .summer-body__column {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .double-block__slider {
+    padding: 30px 0 0 0;
+    max-width: 250px;
+  }
+  .offer {
+    margin-top: -380px;
+  }
+  .offer__special-title {
+    padding-top: 90px;
+  }
+  .summer-nav__tabs {
+    padding: 0 0 4px 0;
+  }
+  .summer-nav__tabs-link {
+    color: #81ffff;
+    font-family: "A 1010 Helvetika - Normal";
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #299fca;
+    border-radius: 5px 5px 0 0;
+  }
+  .tabs-link-1 {
+    padding: 5px 9px 3px 9px;
+  }
+  .tabs-link-2 {
+    padding: 5px 4px 3px 4px;
+    margin: 0 4px 0 2px;
   }
 }

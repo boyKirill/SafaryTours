@@ -77,14 +77,15 @@
 	}
 
 	.menu__body {
+		overflow: auto;
 		position: fixed;
 		top: 0;
 		left: -150%;
 		width: 100%;
+		height: 80vh;
 		background-color: #4cb2e7;
-		padding: 100px 30px 30px 30px;
+		padding: 40px 30px 30px 30px;
 		transition: left 0.3s ease 0s;
-		overflow: auto;
 	}
 
 	.menu__body._active {
@@ -106,18 +107,12 @@
 	}
 
 	.menu__link {
-		font-size: 24px;
+		font-size: 22px;
 	}
 }
 
 @media screen and (max-width: 991px) {
 	.footer {
-		&__container {
-		}
-
-		&__row {
-		}
-
 		&__column {
 			margin-top: 20px;
 		}
@@ -125,49 +120,6 @@
 		&__autor {
 			margin-top: 20px;
 		}
-
-		&__autor-icon {
-		}
-	}
-	.column {
-		&__social {
-		}
-
-		&__contact {
-		}
-
-		&__contact-form {
-		}
-	}
-	.social {
-		&__letter {
-		}
-
-		&__letter-title {
-		}
-
-		&__letter-form {
-		}
-
-		&__media {
-		}
-
-		&__media-title {
-		}
-
-		&__media-icons {
-		}
-
-		&__media-twitter {
-		}
-
-		&__media-facebook {
-		}
-
-		&__media-instagram {
-		}
-	}
-	.title {
 	}
 	.letter-form {
 		&__group {
@@ -175,64 +127,140 @@
 			flex-direction: column;
 		}
 
-		&__email {
-		}
-
 		&__btn {
 			margin-top: 10px;
 			width: 91px;
 		}
 	}
-	.contact {
-		&__title {
+}
+
+@media screen and (max-width: 850px) {
+	.offer {
+		margin-top: -250px;
+
+		&__container {
+			margin: 0;
+			flex-wrap: wrap;
 		}
 
-		&__list {
+		&__special {
 		}
 
-		&__text {
+		&__special-title {
+			padding-top: 50px;
+			text-align: center;
 		}
 
-		&__number {
+		&__special-row {
+			display: flex;
+			align-items: flex-start;
+			flex-wrap: nowrap;
+			justify-content: center;
 		}
 
-		&__email {
+		&__special-column {
+			border-bottom: none;
+			padding: 0;
+
+			&:first-child {
+				padding-top: 26px;
+				border-bottom: none;
+				padding: 0 10px 0 0;
+			}
+			&:last-child {
+				padding: 0;
+				border-bottom: none;
+			}
 		}
 
-		&__fax {
+		&__summer {
+			width: 72%;
+
+			margin-left: 0px;
+			padding-left: 0px;
+			padding: 0 0 20px 0;
+		}
+
+		&__summer-container {
+		}
+
+		&__summer-nav {
+		}
+
+		&__summer-nav-content {
+		}
+
+		&__summer-body {
 		}
 	}
-	.contact-form {
+	.special {
+		padding: 0 20px;
+
+		&__image {
+		}
+
+		&__information {
+		}
+
 		&__title {
-		}
-
-		&__form {
-		}
-
-		&__group {
-		}
-
-		&__name {
-		}
-
-		&__email {
-		}
-
-		&__phone {
 		}
 
 		&__text {
 		}
 
-		&__btn-box {
+		&__row {
+		}
+
+		&__sum {
 		}
 
 		&__btn {
 		}
 	}
-}
+	.read-more {
+	}
+	.summer-nav {
+		&__body {
+			flex: 1 1 auto;
+		}
 
-@media screen and (max-width: 830px) {
+		&__tabs {
+		}
+
+		&__tabs-link {
+		}
+
+		&__logo {
+		}
+	}
+	.tabs-link-1 {
+	}
+	.tabs-link-2 {
+	}
+	.summer-body {
+		&__row {
+		}
+
+		&__column {
+		}
+
+		&__suggestion {
+		}
+
+		&__suggestion-inf {
+		}
+
+		&__suggestion-inf-title {
+		}
+
+		&__suggestion-inf-period {
+			padding: 0 15px 0 0;
+		}
+
+		&__suggestion-details {
+		}
+	}
+
 	.footer {
 		padding-top: 80px;
 	}
@@ -256,6 +284,130 @@
 			padding: 90px 0 20px 0;
 		}
 	}
+
+	.offer {
+		margin-top: -300px;
+
+		&__container {
+		}
+
+		&__special {
+			padding-top: 80px;
+		}
+
+		&__special-title {
+		}
+
+		&__special-row {
+		}
+
+		&__special-column {
+		}
+
+		&__summer {
+		}
+
+		&__summer-container {
+		}
+
+		&__summer-nav {
+		}
+
+		&__summer-nav-content {
+		}
+
+		&__summer-body {
+		}
+	}
+	.special {
+		&__image {
+		}
+
+		&__information {
+		}
+
+		&__title {
+		}
+
+		&__text {
+		}
+
+		&__row {
+		}
+
+		&__sum {
+		}
+
+		&__btn {
+		}
+	}
+	.read-more {
+	}
+	.summer-nav {
+		&__body {
+		}
+
+		&__tabs {
+		}
+
+		&__tabs-link {
+		}
+
+		&__logo {
+		}
+	}
+	.tabs-link-1 {
+	}
+
+	.tabs-link-2 {
+	}
+	.summer-body {
+		&__row {
+		}
+
+		&__column {
+		}
+
+		&__suggestion {
+		}
+
+		&__suggestion-inf {
+		}
+
+		&__suggestion-inf-title {
+		}
+
+		&__suggestion-inf-period {
+		}
+
+		&__suggestion-details {
+		}
+	}
+}
+
+@media screen and (max-width: 625px) {
+	.double-block {
+		&__slider {
+			padding: 50px 0 0 0;
+			max-width: 450px;
+		}
+	}
+	.summer-nav {
+		&__body {
+		}
+
+		&__tabs {
+		}
+
+		&__tabs-link {
+		}
+
+		&__logo {
+			img {
+				width: 100%;
+			}
+		}
+	}
 }
 @media screen and (max-width: 576px) {
 	.header {
@@ -272,6 +424,135 @@
 			font-size: 10px;
 		}
 	}
+	.menu__list > li {
+		flex-wrap: wrap;
+		margin: 0 0 20px 0;
+	}
+
+	.menu__link {
+		font-size: 20px;
+	}
+
+	.offer {
+		margin-top: -340px;
+
+		&__container {
+		}
+
+		&__special {
+			padding-top: 80px;
+		}
+
+		&__special-title {
+			font-size: 25px;
+		}
+
+		&__special-row {
+			flex-wrap: wrap;
+		}
+
+		&__special-column {
+			&:first-child {
+				padding: 0;
+			}
+		}
+
+		&__summer {
+			width: 93%;
+		}
+
+		&__summer-container {
+		}
+
+		&__summer-nav {
+		}
+
+		&__summer-nav-content {
+		}
+
+		&__summer-body {
+		}
+	}
+	.special {
+		&__image {
+		}
+
+		&__information {
+		}
+
+		&__title {
+			font-size: 15px;
+		}
+
+		&__text {
+			font-size: 13px;
+		}
+
+		&__row {
+		}
+
+		&__sum {
+			font-size: 20px;
+		}
+
+		&__btn {
+			font-size: 13px;
+		}
+	}
+	.read-more {
+	}
+	.summer-nav {
+		&__body {
+		}
+
+		&__tabs {
+			padding: 0 0 6px 0;
+		}
+
+		&__tabs-link {
+			color: #81ffff;
+			font-family: "A 1010 Helvetika - Normal";
+			font-size: 15px;
+			font-weight: 400;
+			text-transform: uppercase;
+			text-align: center;
+			background-color: #299fca;
+			border-radius: 5px 5px 0 0;
+		}
+
+		&__logo {
+		}
+	}
+	.tabs-link-1 {
+		padding: 8px 27px 5px 17px;
+	}
+
+	.tabs-link-2 {
+		padding: 8px 19px 5px 15px;
+		margin: 0 4px;
+	}
+	.summer-body {
+		&__row {
+		}
+
+		&__column {
+		}
+
+		&__suggestion {
+		}
+
+		&__suggestion-inf {
+		}
+
+		&__suggestion-inf-title {
+		}
+
+		&__suggestion-inf-period {
+		}
+
+		&__suggestion-details {
+		}
+	}
 
 	.footer {
 		padding-top: 60px;
@@ -279,6 +560,14 @@
 }
 
 @media screen and (max-width: 435px) {
+	
+
+	.double-block {
+		&__slider {
+			padding: 30px 0 0 0;
+			max-width: 400px;
+		}
+	}
 	.header {
 		.header__logo-link {
 			max-width: 100px;
@@ -293,6 +582,160 @@
 			font-size: 7px;
 		}
 	}
+	.summer-body {
+		&__row {
+		}
+
+		&__column {
+		}
+
+		&__suggestion {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__suggestion-inf {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: nowrap;
+			width: 75%;
+		}
+
+		&__suggestion-inf-title {
+			color: #ffffff;
+			font-family: "Colaborate - Thin";
+			margin: 0 0 0 25px;
+			padding: 0 10px 10px 0;
+			font-size: 13px;
+			font-weight: 400;
+			position: relative;
+			&::before {
+				content: "";
+				width: 11px;
+				height: 12px;
+				position: absolute;
+				top: 1.5px;
+				left: -20px;
+				background: url(../img/offer/arrow.webp) no-repeat;
+				display: block;
+			}
+		}
+
+		&__suggestion-inf-period {
+			white-space: nowrap;
+			color: #ffffff;
+			font-family: "Colaborate - Thin";
+			font-size: 13px;
+			font-weight: 400;
+			text-align: left;
+		}
+
+		&__suggestion-details {
+			color: #ffffff;
+			font-family: "Colaborate - Thin";
+			font-size: 13px;
+			font-weight: 400;
+			text-align: left;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	.summer-nav {
+		&__body {
+		}
+
+		&__tabs {
+			padding: 0 0 4px 0;
+		}
+
+		&__tabs-link {
+			color: #81ffff;
+			font-family: "A 1010 Helvetika - Normal";
+			font-size: 15px;
+			font-weight: 400;
+			text-transform: uppercase;
+			text-align: center;
+			background-color: #299fca;
+			border-radius: 5px 5px 0 0;
+		}
+
+		&__logo {
+		}
+	}
+	.tabs-link-1 {
+		padding: 5px 12px 3px 12px;
+	}
+
+	.tabs-link-2 {
+		padding: 5px 7px 3px 7px;
+		margin: 0 4px 0 2px;
+	}
+
+	.footer {
+		padding-top: 0px;
+	}
+}
+
+@media screen and (max-width: 378px) {
+	.double-block {
+		&__slider {
+			padding: 30px 0 0 0;
+			max-width: 350px;
+		}
+	}
+	.booking {
+	}
+	.offer {
+		margin-top: -360px;
+	}
+	.summer-body {
+		&__column {
+			margin-bottom: 15px;
+		}
+	}
 }
 @media screen and (max-width: 320px) {
+	.double-block {
+		&__slider {
+			padding: 30px 0 0 0;
+			max-width: 250px;
+		}
+	}
+	.offer {
+		margin-top: -380px;
+		&__special-title {
+			padding-top: 90px;
+		}
+	}
+	.summer-nav {
+		&__body {
+		}
+
+		&__tabs {
+			padding: 0 0 4px 0;
+		}
+
+		&__tabs-link {
+			color: #81ffff;
+			font-family: "A 1010 Helvetika - Normal";
+			font-size: 11px;
+			font-weight: 400;
+			text-transform: uppercase;
+			text-align: center;
+			background-color: #299fca;
+			border-radius: 5px 5px 0 0;
+		}
+
+		&__logo {
+		}
+	}
+	.tabs-link-1 {
+		padding: 5px 9px 3px 9px;
+	}
+
+	.tabs-link-2 {
+		padding: 5px 4px 3px 4px;
+		margin: 0 4px 0 2px;
+	}
 }

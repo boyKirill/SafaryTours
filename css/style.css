@@ -278,12 +278,15 @@ body._lock {
 }
 
 .double-block__slider {
+  max-width: 650px;
   position: relative;
-  padding: 90px 0 0 0;
+  z-index: 11;
+  padding: 70px 0 0 0;
 }
 
 .image-slider {
-  max-width: 645px;
+  width: 100%;
+  padding: 0 15px;
 }
 
 .image-slider__slide {
@@ -293,6 +296,10 @@ body._lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.image-slider__image img {
+  width: 100%;
 }
 
 .booking {
@@ -376,13 +383,18 @@ body._lock {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: url("../img/slider/select-triangle.webp") no-repeat right center #fff;
-  background-size: contain;
   cursor: pointer;
 }
 
+.booking__forms-group select:not([multiple]) {
+  padding-right: 32px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  background-image: url("../img/slider/select-triangle.webp");
+}
+
 .booking__forms-group textarea {
-  width: 171px;
   height: 57px;
   resize: none;
   padding-top: 5px;
@@ -390,6 +402,34 @@ body._lock {
 
 .booking__forms-group li {
   margin-bottom: 14px;
+}
+
+.booking__form-name {
+  position: relative;
+  z-index: 10;
+}
+
+.booking__form-email {
+  position: relative;
+  z-index: 10;
+}
+
+.booking__form-package {
+  position: relative;
+  z-index: 10;
+}
+
+.booking__form-package::before {
+  content: ">>";
+  position: absolute;
+  z-index: 11;
+  top: 0;
+  left: 0;
+}
+
+.booking__form-message {
+  position: relative;
+  z-index: 10;
 }
 
 .booking__form-btn-box {
@@ -423,8 +463,9 @@ body._lock {
 }
 
 .offer {
+  padding: 0 20px;
   position: relative;
-  margin: -200px 0 0 0;
+  margin-top: -200px;
   background: url(../img/offer/cloud_1.webp) center 0px/cover no-repeat;
 }
 
@@ -435,18 +476,13 @@ body._lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .offer__bg {
   width: 100%;
-}
-
-.offer__special {
-  position: relative;
-  bottom: 0;
 }
 
 .offer__special-title {
@@ -479,6 +515,8 @@ body._lock {
 }
 
 .offer__summer {
+  margin-left: 30px;
+  padding-left: 40px;
   width: 57%;
 }
 
@@ -534,6 +572,7 @@ body._lock {
 
 .special__btn {
   cursor: pointer;
+  white-space: nowrap;
   padding: 8px 12px 8px 12px;
   border-radius: 5px;
   color: #64affc;
@@ -574,6 +613,7 @@ body._lock {
 
 .summer-nav__tabs {
   padding: 0 0 8px 0;
+  white-space: nowrap;
 }
 
 .summer-nav__tabs-link {
@@ -606,7 +646,7 @@ body._lock {
 
 .tabs-link-2 {
   padding: 11px 29px 7px 25px;
-  margin-left: 4px;
+  margin: 0 4px;
 }
 
 .summer-body__suggestion {
@@ -616,8 +656,6 @@ body._lock {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .summer-body__suggestion-inf {
@@ -627,8 +665,8 @@ body._lock {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 75%;
 }
 
@@ -636,7 +674,7 @@ body._lock {
   color: #ffffff;
   font-family: "Colaborate - Thin";
   margin: 0 0 0 25px;
-  padding: 0 0 10px 0;
+  padding: 0 10px 10px 0;
   font-size: 16px;
   font-weight: 400;
   position: relative;
@@ -654,6 +692,7 @@ body._lock {
 }
 
 .summer-body__suggestion-inf-period {
+  white-space: nowrap;
   color: #ffffff;
   font-family: "Colaborate - Thin";
   font-size: 16px;
@@ -663,6 +702,7 @@ body._lock {
 
 .summer-body__suggestion-details {
   color: #ffffff;
+  white-space: nowrap;
   font-family: "Colaborate - Thin";
   font-size: 16px;
   font-weight: 400;
