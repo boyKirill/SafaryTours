@@ -141,3 +141,15 @@ for (var i = 0; i < tabNavs.length; i++) {
 		};
 	});
 }
+
+// Появление информационной таблички на картах
+let mapContent = document.querySelector(".map__content");
+let mapAfrica = document.querySelector(".map__africa");
+let mapWorld = document.querySelector(".map__world");
+
+mapAfrica.addEventListener("click", function(){
+	mapContent.classList.toggle("_active");
+})
+mapWorld.addEventListener("click", function(){
+	mapContent.classList.remove("_active");
+})

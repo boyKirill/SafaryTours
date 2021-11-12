@@ -221,6 +221,9 @@
   .offer__special {
     padding-top: 80px;
   }
+  .map__title {
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-width: 625px) {
@@ -234,6 +237,12 @@
 }
 
 @media screen and (max-width: 576px) {
+  .map__title {
+    font-size: 22px;
+  }
+  .map__description {
+    font-size: 15px;
+  }
   .header .header__logo-link {
     max-width: 150px;
     padding: 55px 5px 15px 5px;
@@ -414,6 +423,16 @@
   }
   .summer-body__column {
     margin-bottom: 15px;
+  }
+  .map__title {
+    font-size: 22px;
+  }
+  .map__description {
+    font-size: 13px;
+  }
+  .map__africa-box {
+    -webkit-transform: translateX(-42%) translateY(-36%);
+            transform: translateX(-42%) translateY(-36%);
   }
 }
 

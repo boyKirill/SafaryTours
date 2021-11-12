@@ -73,12 +73,10 @@ body._lock {
 	}
 
 	&__body {
-		
 		transform: rotate(2deg);
 		margin: 10px 0px 0 0;
 		padding: 0 105px 0 0;
 		border-radius: 10px;
-		
 	}
 
 	&__list {
@@ -124,7 +122,6 @@ body._lock {
 .image-slider {
 	width: 100%;
 	padding: 0 15px;
-	
 
 	&__wrapper {
 	}
@@ -132,14 +129,12 @@ body._lock {
 	&__slide {
 		display: flex;
 		align-items: center;
-		
 	}
 
 	&__image {
-		img{
+		img {
 			width: 100%;
 		}
-		
 	}
 }
 
@@ -150,7 +145,9 @@ body._lock {
 	max-width: 309px;
 	border-radius: 20px;
 	&__title {
-		margin: 26px 0 33px -20px;
+		margin: 26px 0 30px -20px;
+
+		/*
 		color: #ffffff;
 		font-family: "AG Letterica Bold Bold";
 		font-size: 21px;
@@ -172,7 +169,7 @@ body._lock {
 			border-top: 20px solid transparent;
 			border-right: 20px solid #299fca;
 			border-bottom: 20px solid transparent;
-		}
+		}*/
 	}
 
 	&__row {
@@ -216,21 +213,18 @@ body._lock {
 			padding-left: 7px;
 			color: #299fca;
 			font-family: "AG Foreigner Roman Medium";
-
 		}
 
 		select {
 			appearance: none;
 			cursor: pointer;
 			&:not([multiple]) {
-				
-				padding-right:32px;
+				padding-right: 32px;
 				background-repeat: no-repeat;
 				background-position: right center;
 				background-size: contain;
 				background-image: url("../img/slider/select-triangle.webp");
-			 }
-			
+			}
 		}
 
 		textarea {
@@ -256,7 +250,7 @@ body._lock {
 	&__form-package {
 		position: relative;
 		z-index: 10;
-		&::before{
+		&::before {
 			content: ">>";
 			position: absolute;
 			z-index: 11;
@@ -525,6 +519,156 @@ body._lock {
 			text-decoration: underline;
 		}
 	}
+}
+
+.map {
+	background-color: #d6e6ef;
+	&__container {
+		max-width: 961px;
+		margin: 0 auto;
+		padding: 0 30px;
+	}
+
+	&__title {
+		color: #4690b4;
+		font-family: "AG Letterica Bold Bold";
+		font-size: 27px;
+		font-weight: 400;
+		text-align: center;
+		padding: 24px 0 4px 0;
+	}
+
+	&__description {
+		color: #6ab5d0;
+		font-family: "AG Letterica Bold Bold";
+		font-size: 17px;
+		font-weight: 400;
+		text-align: center;
+	}
+
+	&__body {
+		padding: 13px 0 42px 0;
+		position: relative;
+	}
+
+	&__world {
+		width: 100%;
+	}
+	&__africa-box {
+		max-width: 174px;
+		margin-right: 30%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-42%) translateY(-25%);
+	}
+	&__africa {
+		width: 100%;
+		cursor: pointer;
+		&:hover {
+			transition: all 0.2s ease 0s;
+			transform: scale(1.01);
+		}
+	}
+
+	&__content {
+		display: none;
+		max-width: 260px;
+		max-height: 280px;
+		background-color: #f6f4f4;
+		padding: 23px 15px 19px 15px;
+		box-shadow: 0 0 8px rgba(0, 0, 0, 0.14);
+		border: 1px solid #ffffff;
+		background-image: linear-gradient(to top, rgba(207, 201, 201, 0.55) 0%, rgba(248, 244, 244, 0.55) 100%);
+		border-radius: 10px;
+		position: absolute;
+		top: 16%;
+		left: 12%;
+		&::before {
+			content: "";
+			/* В любом случае необходим, даже пустой. Иначе не будет работать */
+			position: absolute;
+			right: -100px;
+			bottom: 20px;
+			width: 100px;
+			height: 100px;
+			background-image: url('../img/map/Longarr.png');
+			background-size: 100px 100px;
+		}
+	}
+	&__content-scroll {
+		max-height: 200px;
+		overflow-y: auto;
+		overflow-x: hidden;
+		&::-webkit-scrollbar {
+			width: 11px;
+			
+			padding: 0 20px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: #949292;
+			background: #949292 url(../img/map/polzunok.webp)center no-repeat;
+			
+		}
+		&::-webkit-scrollbar-track {
+			background: #a4a4a4;
+			border: 6px solid transparent;
+			background-clip: content-box;
+		}
+	}
+	&__row {
+		display: flex;
+		flex-direction: column;
+		padding: 0 15px 22px 0;
+	}
+
+	&__column {
+		display: flex;
+		margin-bottom: 16px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__img {
+	}
+
+	&__inf {
+		padding: 0 0 0 11px;
+	}
+
+	&__inf-title {
+		white-space: nowrap;
+		color: #a4a4a4;
+		font-family: "ColabMed";
+		font-size: 17px;
+		font-weight: 500;
+		text-align: left;
+	}
+
+	&__inf-description {
+		color: #a4a4a4;
+		font-family: "Colaborate - Thin";
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 17px;
+		text-align: left;
+	}
+
+	&__content-title {
+		color: #b2aaaa;
+		font-family: "ColabReg";
+		font-size: 23px;
+		font-weight: 400;
+		text-align: left;
+		padding: 22px 70px 0 27px;
+		white-space: nowrap;
+	}
+}
+
+.map__content._active{
+	display: block;
 }
 
 .footer {

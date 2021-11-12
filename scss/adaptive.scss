@@ -383,6 +383,60 @@
 		&__suggestion-details {
 		}
 	}
+
+
+	.map {
+
+		&__container {
+		}
+
+		&__title {
+			font-size: 24px;	
+		}
+
+		&__description {
+		}
+
+		&__body {
+		}
+
+		&__world {
+		}
+
+		&__africa-box {
+		}
+
+		&__africa {
+		}
+
+		&__content {
+		}
+
+		&__content-scroll {
+		}
+
+		&__row {
+		}
+
+		&__column {
+		}
+
+		&__img {
+		}
+
+		&__inf {
+		}
+
+		&__inf-title {
+		}
+
+		&__inf-description {
+		}
+
+		&__content-title {
+		}
+}
+
 }
 
 @media screen and (max-width: 625px) {
@@ -410,6 +464,59 @@
 	}
 }
 @media screen and (max-width: 576px) {
+	.map {
+
+		&__container {
+		}
+
+		&__title {
+			font-size: 22px;
+		}
+
+		&__description {
+			font-size: 15px;
+		}
+
+		&__body {
+		}
+
+		&__world {
+		}
+
+		&__africa-box {
+		}
+
+		&__africa {
+		}
+
+		&__content {
+		}
+
+		&__content-scroll {
+		}
+
+		&__row {
+		}
+
+		&__column {
+		}
+
+		&__img {
+		}
+
+		&__inf {
+		}
+
+		&__inf-title {
+		}
+
+		&__inf-description {
+		}
+
+		&__content-title {
+		}
+}
+
 	.header {
 		.header__logo-link {
 			max-width: 150px;
@@ -694,6 +801,61 @@
 			margin-bottom: 15px;
 		}
 	}
+
+	.map {
+
+		&__container {
+		}
+
+		&__title {
+			font-size: 22px;
+		}
+
+		&__description {
+			font-size: 13px;
+		}
+
+		&__body {
+		}
+
+		&__world {
+		}
+
+		&__africa-box {
+			transform: translateX(-42%) translateY(-36%);
+		}
+
+		&__africa {
+		}
+
+		&__content {
+		}
+
+		&__content-scroll {
+		}
+
+		&__row {
+		}
+
+		&__column {
+		}
+
+		&__img {
+		}
+
+		&__inf {
+		}
+
+		&__inf-title {
+		}
+
+		&__inf-description {
+		}
+
+		&__content-title {
+		}
+}
+
 }
 @media screen and (max-width: 320px) {
 	.double-block {
