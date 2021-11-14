@@ -1,0 +1,112 @@
+.special-summer-offer {
+	padding: 13% 0 0 0;
+	background: url(../img/offer/cloud_1.webp) center -74% / cover no-repeat,
+		url(../img/slider/cloud_2.png) center -20% / cover no-repeat,
+		url(../img/slider/bg_shades1.webp) no-repeat 40% -20%,
+		linear-gradient(to top, #f5f9fb 20%, #d7e7f0 50%, #d6e6ef 10%);
+
+	&__container {
+		max-width: 1150px;
+
+		padding: 0 20px;
+		margin: 0 auto;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+	&__image {
+		margin: 0 0px 0 70%;
+	}
+
+	&__row {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__column {
+		display: flex;
+		padding: 0 10px;
+		max-width: 332px;
+		margin: 25px 0;
+		/*margin:  26px 3% 24px -3%;
+		&:last-child{
+			margin: 26px 3% 24px -3%;
+		}*/
+	}
+}
+
+.many-offers {
+	background-color: #d6e6ef;
+
+	&__container {
+		max-width: 1003px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__column {
+		max-width: 217px;
+	}
+
+	&__column-image {
+	}
+
+	&__column-title {
+		text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75);
+		color: #959595;
+		font-family: "A Bodoni Nova Nr Italic";
+		font-size: 21px;
+		font-weight: 400;
+		padding: 10px 0 11px 10px;
+	}
+
+	&__column-description {
+		color: #737070;
+		font-family: "Colaborate - Thin";
+		font-size: 15px;
+		font-weight: 400;
+		text-align: left;
+	}
+
+	&__column-btn {
+		cursor: pointer;
+		white-space: nowrap;
+		padding: 8px 12px 8px 12px;
+		border-radius: 5px;
+		color: #ffffff;
+		font-family: "AG Letterica Bold Bold";
+		font-size: 15px;
+		font-weight: 400;
+		max-width: 100px;
+		background-image: linear-gradient(to top, #127ea5 0%, #1ca7d9 100%);
+		&:hover {
+			background-image: none;
+			background-color: #19ff19;
+			color: #fff;
+		}
+	}
+
+	&__sidebars {
+	}
+
+	&__sidebar {
+		max-width: 243px;
+	}
+
+	&__sidebar-title {
+	}
+
+	&__sidebar-body {
+	}
+}
+.read-more-btn {
+}

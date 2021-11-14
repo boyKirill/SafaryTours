@@ -1,0 +1,120 @@
+@media screen and (max-width: 850px) {
+
+	.special-summer-offer {
+		padding: 200px 0 0 0;
+		background: url(../img/offer/cloud_1.webp) center -98% / cover no-repeat,
+	url(../img/slider/cloud_2.png) center -20% / cover no-repeat,
+	url(../img/slider/bg_shades1.webp) no-repeat 40% -20%,
+	linear-gradient(to top, #f5f9fb 20%, #d7e7f0 50%, #d6e6ef 10%);
+
+		&__container {
+		}
+	
+		&__image {
+		}
+	
+		&__row {
+			flex-wrap: wrap;
+			justify-content: center;
+			
+		}
+	
+		&__column {
+		}
+	}
+
+	.special {
+
+		&__image {
+		}
+	
+		&__information {
+		}
+	
+		&__title {
+		}
+	
+		&__text {
+		}
+	
+		&__row {
+		}
+	
+		&__sum {
+		}
+	
+		&__btn {
+		}
+	}
+	.read-more {
+	}
+	.read-more-btn {
+	}
+	
+}
+
+
+@media screen and (max-width: 704px) {
+	.special-summer-offer {
+
+		&__container {
+		}
+
+		&__image {
+			margin: 0;
+		}
+
+		&__row {
+		}
+
+		&__column {
+			margin: 10px 0;
+		}
+}
+}
+
+@media screen and (max-width: 320px) {
+	.special-summer-offer {
+
+		&__container {
+		}
+
+		&__image {
+			margin: 0;
+		}
+
+		&__row {
+		}
+
+		&__column {
+		}
+}
+.special {
+
+		&__image {
+		}
+
+		&__information {
+		}
+
+		&__title {
+		}
+
+		&__text {
+		}
+
+		&__row {
+		}
+
+		&__sum {
+		}
+
+		&__btn {
+		}
+}
+.read-more {
+}
+.read-more-btn {
+}
+
+}

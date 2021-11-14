@@ -94,22 +94,22 @@ $(".contact-form__phone").mask("+7(999)999-99-99");
 
 // Показ скрытой части текста
 let readMore = document.querySelector('.read-more');
-let specialBtns = document.querySelectorAll('.special__btn');
+let readMoreBtns = document.querySelectorAll('.read-more-btn');
 
-for (let index = 0; index < specialBtns.length; index++) {
-	const specialBtn = specialBtns[index];
-	specialBtn.addEventListener('click', function (e) {
+for (let index = 0; index < readMoreBtns.length; index++) {
+	const readMoreBtn = readMoreBtns[index];
+	readMoreBtn.addEventListener('click', function (e) {
 
-		if (specialBtn.innerHTML == "Read more") {
-			specialBtn.innerHTML = "Read less"
-			let parent = specialBtn.parentElement;
+		if (readMoreBtn.innerHTML == "Read more") {
+			readMoreBtn.innerHTML = "Read less"
+			let parent = readMoreBtn.parentElement;
 			let previousElement = parent.previousElementSibling;
 			let previousElementChildSpan = previousElement.querySelector('.read-more');
 
 			previousElementChildSpan.classList.add('_active');
 		} else {
-			specialBtn.innerHTML = "Read more"
-			let parent = specialBtn.parentElement;
+			readMoreBtn.innerHTML = "Read more"
+			let parent = readMoreBtn.parentElement;
 			let previousElement = parent.previousElementSibling;
 			let previousElementChildSpan = previousElement.querySelector('.read-more');
 
@@ -141,15 +141,82 @@ for (var i = 0; i < tabNavs.length; i++) {
 		};
 	});
 }
-
+/*
 // Появление информационной таблички на картах
 let mapContent = document.querySelector(".map__content");
 let mapAfrica = document.querySelector(".map__africa");
 let mapWorld = document.querySelector(".map__world");
 
-mapAfrica.addEventListener("click", function(){
+mapAfrica.addEventListener("click", function () {
 	mapContent.classList.toggle("_active");
 })
-mapWorld.addEventListener("click", function(){
+mapWorld.addEventListener("click", function () {
 	mapContent.classList.remove("_active");
 })
+
+$('.map__africa').click(function (e) {
+	e.preventDefault();
+	document.body.classList.add('_lock');
+
+	$('#popup').show();
+});
+
+$('.popup__close').click(function (e) {
+	e.preventDefault();
+	document.body.classList.remove('_lock');
+	$('#popup').hide();
+});
+
+$("#popup").click(function (e) { // событие клика по #popup
+	var div = $(".popup__content"); // тут указываем ID элемента
+	if (!div.is(e.target) // если клик был не по нашему блоку
+		&& div.has(e.target).length === 0) { // и не по его дочерним элементам
+		$('#popup').hide();
+		document.body.classList.remove('_lock');
+	}
+});*/
+
+
+
+function getWindowWidth() {
+	return window.innerWidth || document.body.clientWidth;
+}
+
+if (getWindowWidth() > 991) {
+	let mapContent = document.querySelector(".map__content");
+	let mapAfrica = document.querySelector(".map__africa");
+	let mapWorld = document.querySelector(".map__world");
+	let popup = document.querySelector(".popup");
+
+	popup.style.display = "none";
+
+	mapAfrica.addEventListener("click", function () {
+		mapContent.classList.toggle("_active");
+	})
+	mapWorld.addEventListener("click", function () {
+		mapContent.classList.remove("_active");
+	})
+} else {
+
+	$('.map__africa').click(function (e) {
+		e.preventDefault();
+		document.body.classList.add('_lock');
+	
+		$('#popup').show();
+	});
+	
+	$('.popup__close').click(function (e) {
+		e.preventDefault();
+		document.body.classList.remove('_lock');
+		$('#popup').hide();
+	});
+	
+	$("#popup").click(function (e) { // событие клика по #popup
+		var div = $(".popup__content"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+			&& div.has(e.target).length === 0) { // и не по его дочерним элементам
+			$('#popup').hide();
+			document.body.classList.remove('_lock');
+		}
+	});
+}

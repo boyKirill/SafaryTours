@@ -1,0 +1,29 @@
+@media screen and (max-width: 850px) {
+  .special-summer-offer {
+    padding: 200px 0 0 0;
+    background: url(../img/offer/cloud_1.webp) center -98%/cover no-repeat, url(../img/slider/cloud_2.png) center -20%/cover no-repeat, url(../img/slider/bg_shades1.webp) no-repeat 40% -20%, -webkit-gradient(linear, left bottom, left top, color-stop(20%, #f5f9fb), color-stop(50%, #d7e7f0), color-stop(10%, #d6e6ef));
+    background: url(../img/offer/cloud_1.webp) center -98%/cover no-repeat, url(../img/slider/cloud_2.png) center -20%/cover no-repeat, url(../img/slider/bg_shades1.webp) no-repeat 40% -20%, linear-gradient(to top, #f5f9fb 20%, #d7e7f0 50%, #d6e6ef 10%);
+  }
+  .special-summer-offer__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 704px) {
+  .special-summer-offer__image {
+    margin: 0;
+  }
+  .special-summer-offer__column {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .special-summer-offer__image {
+    margin: 0;
+  }
+}

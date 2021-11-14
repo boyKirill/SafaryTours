@@ -281,11 +281,8 @@ body._lock {
 		border-radius: 5px;
 		padding: 10px 25px;
 		&:hover {
-			background-image: none;
-			background-color: #19ff19;
-			color: #fff;
-			text-shadow: 2px 0 0 #2090b9, -2px 0 0 #2090b9, 0 2px 0 #2090b9, 0 -2px 0 #2090b9, 1px 1px #2090b9,
-				-1px -1px 0 #2090b9, 1px -1px 0 #2090b9, -1px 1px 0 #2090b9;
+			transition: all 0.2s ease 0s;
+			transform: scale(1.05);
 		}
 	}
 }
@@ -592,7 +589,7 @@ body._lock {
 			bottom: 20px;
 			width: 100px;
 			height: 100px;
-			background-image: url('../img/map/Longarr.png');
+			background-image: url("../img/map/Longarr.png");
 			background-size: 100px 100px;
 		}
 	}
@@ -602,14 +599,13 @@ body._lock {
 		overflow-x: hidden;
 		&::-webkit-scrollbar {
 			width: 11px;
-			
+
 			padding: 0 20px;
 		}
 
 		&::-webkit-scrollbar-thumb {
 			background-color: #949292;
-			background: #949292 url(../img/map/polzunok.webp)center no-repeat;
-			
+			background: #949292 url(../img/map/polzunok.webp) center no-repeat;
 		}
 		&::-webkit-scrollbar-track {
 			background: #a4a4a4;
@@ -667,7 +663,7 @@ body._lock {
 	}
 }
 
-.map__content._active{
+.map__content._active {
 	display: block;
 }
 
@@ -955,3 +951,6 @@ body._lock {
 		}
 	}
 }
+
+
+

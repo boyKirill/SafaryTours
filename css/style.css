@@ -456,10 +456,10 @@ body._lock {
 }
 
 .booking__form-btn:hover {
-  background-image: none;
-  background-color: #19ff19;
-  color: #fff;
-  text-shadow: 2px 0 0 #2090b9, -2px 0 0 #2090b9, 0 2px 0 #2090b9, 0 -2px 0 #2090b9, 1px 1px #2090b9, -1px -1px 0 #2090b9, 1px -1px 0 #2090b9, -1px 1px 0 #2090b9;
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .offer {
